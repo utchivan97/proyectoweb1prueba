@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Footer = () => {
-    return (
-        <footer>
-            {/* Contenido del Footer */}
-        </footer>
-    );
+function Footer() {
+  return (
+    <footer>
+      <p>© 2024 AR Security - Sistema de Creación de Horarios</p>
+    </footer>
+  );
 }
 
 export default Footer;

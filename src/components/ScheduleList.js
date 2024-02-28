@@ -1,17 +1,16 @@
 import React from 'react';
 
-const ScheduleList = ({ schedules }) => {
-    return (
-        <ul>
-            {schedules.map((schedule, index) => (
-                <li key={index}>
-                    <span>Fecha: {schedule.date}</span>
-                    <span>Turno: {schedule.shift}</span>
-                    <span>Empleado: {schedule.employee}</span>
-                </li>
-            ))}
-        </ul>
-    );
-};
+function ScheduleList({ employees }) {
+  return (
+    <div>
+      <h2>Lista de Horarios</h2>
+      <ul>
+        {employees.map((employee, index) => (
+          <li key={index}>{employee.name} - {employee.location}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 
 export default ScheduleList;

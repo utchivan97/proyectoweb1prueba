@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Navbar = () => {
-    return (
-        <nav>
-            {/* Contenido del Navbar */}
-        </nav>
-    );
+function Navbar() {
+  return (
+    <nav>
+      <h1>AR Security - Sistema de Creación de Horarios</h1>
+     
+    </nav>
+  );
 }
 
 export default Navbar;
