@@ -1,21 +1,22 @@
 import React from 'react';
+import '../App.css'; // Importa los estilos CSS para ScheduleTable
 
 const ScheduleTable = ({ workplaces }) => {
   return (
-    <div>
-      <h2 style={{ marginTop: '20px' }}>Horarios</h2>
-      <table style={{ margin: '20px auto', borderCollapse: 'collapse' }}>
+    <div className="schedule-table-container">
+      <h2>Horarios</h2>
+      <table className="schedule-table">
         <thead>
           <tr>
-            <th style={{ border: '1px solid black', padding: '8px' }}>Lugar de Trabajo</th>
-            <th style={{ border: '1px solid black', padding: '8px' }}>Empleado</th>
+            <th>Lugar de Trabajo</th>
+            <th>Empleado</th>
           </tr>
         </thead>
         <tbody>
           {workplaces.map((workplace, index) => (
             <tr key={index}>
-              <td style={{ border: '1px solid black', padding: '8px' }}>{workplace.name}</td>
-              <td style={{ border: '1px solid black', padding: '8px' }}>
+              <td>{workplace.name}</td>
+              <td>
                 {workplace.employees.map((employee, i) => (
                   <span key={i}>{employee}{i !== workplace.employees.length - 1 && ', '}</span>
                 ))}

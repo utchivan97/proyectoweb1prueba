@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+import './App.css'; // Importa el archivo CSS principal
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import DevPage from './pages/DevPage';

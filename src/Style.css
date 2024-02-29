@@ -1,0 +1,86 @@
+/* styles.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  .App {
+    text-align: center;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Estilos para la tabla de horarios */
+  
+  .schedule-table-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .schedule-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .schedule-table th, .schedule-table td {
+    border: 1px solid rgb(208, 186, 24);
+    padding: 8px;
+  }
+  
+  /* Estilos para el navbar */
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Estilos para el footer */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
