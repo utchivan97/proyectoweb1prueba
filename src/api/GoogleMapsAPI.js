@@ -4,7 +4,4 @@ const GoogleMapsAPI = {
 };
 
 export default GoogleMapsAPI;
-{
-    "name": "Nombre del Horario",
-    "time": "Hora del Horario"
-  }
+export const googleMapsApiKey = 'AIzaSyDKonQDoI2Op7XIedQfLIcn75YebNMW3sI';
