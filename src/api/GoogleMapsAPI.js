@@ -4,3 +4,7 @@ const GoogleMapsAPI = {
 };
 
 export default GoogleMapsAPI;
+{
+    "name": "Nombre del Horario",
+    "time": "Hora del Horario"
+  }
