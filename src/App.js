@@ -16,19 +16,12 @@ function App() {
           <Route path="/" element={<DevPage />} />
         </Routes>
         <Footer />
+        <div className="App">
+          <h1>Mi Aplicación con Mapa</h1>
+          <ApiMaps />
+        </div>
       </div>
     </Router>
-  );
-}
-
-export default App;
-
-function App() {
-  return (
-    <div className="App">
-      <h1>Mi Aplicación con Mapa</h1>
-      <ApiMaps />
-    </div>
   );
 }
 

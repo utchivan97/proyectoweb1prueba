@@ -1,22 +1,24 @@
 import React from 'react';
 import { Map, GoogleApiWrapper } from 'google-maps-react';
-import { googleMapsApiKey } from 'AIzaSyDKonQDoI2Op7XIedQfLIcn75YebNMW3sI'; 
 
+function ApiMaps(props) {
+  if (!props || !props.google) {
+    return null; // Maneja el caso en el que las props no estén definidas correctamente
+  }
 
-function ScheduleForm() {
   return (
     <div>
       <h3>Agregar Horario</h3>
-      {/* Agrega el componente Map */}
+      {/* Utiliza props.google directamente */}
       <Map
-        google={this.props.google} // Proporciona la instancia de google
-        zoom={14} // Establece el nivel de zoom inicial
-        initialCenter={{ lat: 37.7749, lng: -122.4194 }} // Establece el centro del mapa inicial
+        google={props.google}
+        zoom={14}
+        initialCenter={{ lat: 28.6353, lng: -106.0889 }}
       />
     </div>
   );
 }
 
 export default GoogleApiWrapper({
-  apiKey: AIzaSyDKonQDoI2Op7XIedQfLIcn75YebNMW3sIy // API Key
-})(ScheduleForm);
+  apiKey: 'AIzaSyDKonQDoI2Op7XIedQfLIcn75YebNMW3sI'
+})(ApiMaps);
